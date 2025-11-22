@@ -1,6 +1,6 @@
-//structer for name of book.author
-#include<stdio.h>
+
 #include<stdlib.h>
+#include<stdio.h>
 #include<string.h>
 struct book
 {
@@ -16,7 +16,7 @@ void main()
     scanf("%d",&n);
     struct book b[n];
     for(int i = 0; i<n; i++)
-
+{
     printf("Enter the name of book: ");
     scanf("%s",b[i].name);
 
@@ -28,3 +28,10 @@ void main()
         scanf("%d",&b[i].year);
     
     }
+    printf(" your information\n");
+    for (int i = 0;i<n;i++)
+    
+        printf("%s\n",b[i].name);
+        printf("%s\n",b[i].author);
+        printf("%d\n",b[i].year);
+}
